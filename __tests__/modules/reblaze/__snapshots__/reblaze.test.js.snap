@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reblaze createConfig when server is disable 1`] = `
+Array [
+  Object {
+    "backup": false,
+    "down": true,
+    "fail_timeout": "10s",
+    "host": "35.225.62.170",
+    "http_port": "80",
+    "https_port": "443",
+    "max_fails": "1",
+    "monitor_state": "0",
+    "weight": "1",
+  },
+  Object {
+    "backup": false,
+    "down": true,
+    "fail_timeout": "10s",
+    "host": "35.224.181.95",
+    "http_port": "80",
+    "https_port": "443",
+    "max_fails": "1",
+    "monitor_state": "0",
+    "weight": "1",
+  },
+]
+`;
+
+exports[`Reblaze createConfig when server is enable 1`] = `
+Array [
+  Object {
+    "backup": false,
+    "down": false,
+    "fail_timeout": "10s",
+    "host": "35.225.62.170",
+    "http_port": "80",
+    "https_port": "443",
+    "max_fails": "1",
+    "monitor_state": "0",
+    "weight": "1",
+  },
+  Object {
+    "backup": false,
+    "down": false,
+    "fail_timeout": "10s",
+    "host": "35.224.181.95",
+    "http_port": "80",
+    "https_port": "443",
+    "max_fails": "1",
+    "monitor_state": "0",
+    "weight": "1",
+  },
+]
+`;
+
+exports[`Reblaze findServers data correctly 1`] = `
+Object {
+  "35.193.224.71": "node4",
+  "35.224.128.225": "node3",
+  "35.224.181.95": "node2",
+  "35.225.24.224": "admin",
+  "35.225.62.170": "node1",
+  "35.226.19.133": "node5",
+}
+`;

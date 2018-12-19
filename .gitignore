@@ -1,0 +1,6 @@
+.idea
+.vscode
+.git
+.env
+yarn-error.log
+node_modules

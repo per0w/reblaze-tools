@@ -1,0 +1,40 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@bitbucket.gusadev.com:7999/dev/deploy.git",
+  "author": "vladimir-p <vladimirvpa@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node app/deploy.js",
+    "test": "jest ",
+    "lint": "eslint app",
+    "lint:fix": "eslint --fix app"
+  },
+  "bin": {
+    "devops-tools": "./app/index.js"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jest": "^23.4.1",
+    "jest-mock": "^23.2.0",
+    "jest-mock-axios": "^2.1.11",
+    "jest-mock-console": "^0.4.0",
+    "mock-fs": "^4.5.0",
+    "prettier": "^1.13.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "yargs": "^12.0.1"
+  }
+}
